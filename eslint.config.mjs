@@ -42,7 +42,7 @@ const eslintConfig = [
             "max-len": [`warn`, { code: 480 }],
             "no-var": `error`,
             "@typescript-eslint/no-unused-vars": `warn`,
-            "object-curly-newline": [`error`, {
+            "object-curly-newline": [`warn`, {
                 "ObjectExpression": { "multiline": true, "minProperties": 4 },
                 "ObjectPattern": { "multiline": true, "minProperties": 4 },
                 "ImportDeclaration": { "multiline": true, "minProperties": 4 },
