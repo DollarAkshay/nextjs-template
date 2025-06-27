@@ -25,28 +25,28 @@ import { Icon } from "@iconify/react";
 import * as React from "react";
 
 const COLOR_LIST = [
-    { name: `Blue`, value: `#1976d2` },
-    { name: `Red`, value: `#dc004e` },
-    { name: `Green`, value: `#2e7d32` },
-    { name: `Purple`, value: `#9c27b0` },
-    { name: `Orange`, value: `#ff9800` },
-    { name: `Teal`, value: `#00897b` },
-    { name: `Pink`, value: `#e91e63` },
+    { name: "Blue", value: "#1976d2" },
+    { name: "Red", value: "#dc004e" },
+    { name: "Green", value: "#2e7d32" },
+    { name: "Purple", value: "#9c27b0" },
+    { name: "Orange", value: "#ff9800" },
+    { name: "Teal", value: "#00897b" },
+    { name: "Pink", value: "#e91e63" },
 ];
 
 const SOLAR_ICONS = [
-    { name: `solar:home-2-bold-duotone`, label: `Home` },
-    { name: `solar:user-bold-duotone`, label: `User` },
-    { name: `solar:settings-bold-duotone`, label: `Settings` },
-    { name: `solar:heart-bold-duotone`, label: `Heart` },
-    { name: `solar:star-bold-duotone`, label: `Star` },
-    { name: `solar:bell-bold-duotone`, label: `Bell` },
-    { name: `solar:mailbox-bold-duotone`, label: `Mail` },
-    { name: `solar:shield-check-bold-duotone`, label: `Shield` },
-    { name: `solar:chart-bold-duotone`, label: `Chart` },
-    { name: `solar:calendar-bold-duotone`, label: `Calendar` },
-    { name: `solar:folder-bold-duotone`, label: `Folder` },
-    { name: `solar:camera-bold-duotone`, label: `Camera` },
+    { name: "solar:home-2-bold-duotone", label: "Home" },
+    { name: "solar:user-bold-duotone", label: "User" },
+    { name: "solar:settings-bold-duotone", label: "Settings" },
+    { name: "solar:heart-bold-duotone", label: "Heart" },
+    { name: "solar:star-bold-duotone", label: "Star" },
+    { name: "solar:bell-bold-duotone", label: "Bell" },
+    { name: "solar:mailbox-bold-duotone", label: "Mail" },
+    { name: "solar:shield-check-bold-duotone", label: "Shield" },
+    { name: "solar:chart-bold-duotone", label: "Chart" },
+    { name: "solar:calendar-bold-duotone", label: "Calendar" },
+    { name: "solar:folder-bold-duotone", label: "Folder" },
+    { name: "solar:camera-bold-duotone", label: "Camera" },
 ];
 
 export default function Home() {
@@ -54,8 +54,8 @@ export default function Home() {
     const [color, setColor] = React.useState(COLOR_LIST[0].value);
     const [sliderValue, setSliderValue] = React.useState(30);
     const [checkedValue, setCheckedValue] = React.useState(true);
-    const [radioValue, setRadioValue] = React.useState(`option1`);
-    const [selectValue, setSelectValue] = React.useState(`option1`);
+    const [radioValue, setRadioValue] = React.useState("option1");
+    const [selectValue, setSelectValue] = React.useState("option1");
 
     const dynamicTheme = createTheme({
         colorSchemes: {
@@ -72,11 +72,11 @@ export default function Home() {
                 },
             },
         },
-        typography: { fontFamily: `'Roboto', 'Helvetica', 'Arial', sans-serif` },
+        typography: { fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif" },
     });
 
     const handleModeChange = () => {
-        setMode(mode === `dark` ? `light` : `dark`);
+        setMode(mode === "dark" ? "light" : "dark");
     };
 
     // Handle initial undefined mode
@@ -99,12 +99,12 @@ export default function Home() {
                         <FormControlLabel
                             control={
                                 <Switch 
-                                    checked={mode === `dark`} 
+                                    checked={mode === "dark"} 
                                     onChange={handleModeChange}
                                     color="default"
                                 />
                             }
-                            label={mode === `dark` ? `Dark` : `Light`}
+                            label={mode === "dark" ? "Dark" : "Light"}
                             className="text-white"
                         />
                     </Toolbar>
@@ -130,7 +130,7 @@ export default function Home() {
                                     key={c.value}
                                     onClick={() => setColor(c.value)}
                                     className={`w-8 h-8 rounded-full transition-all duration-200 ${
-                                        color === c.value ? `ring-4 ring-offset-2 ring-current scale-110` : `hover:scale-105`
+                                        color === c.value ? "ring-4 ring-offset-2 ring-current scale-110" : "hover:scale-105"
                                     }`}
                                     style={{ backgroundColor: c.value }}
                                     aria-label={c.name}
@@ -321,7 +321,7 @@ export default function Home() {
                         <Container maxWidth="xl">
                             <div className="text-center">
                                 <Typography variant="body2" className="text-gray-500">
-                                    Developed by{` `}
+                                    Developed by{" "}
                                     <Link 
                                         href="https://github.com/DollarAkshay" 
                                         target="_blank" 

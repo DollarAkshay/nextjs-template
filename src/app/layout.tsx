@@ -3,8 +3,8 @@ import { Providers } from "../providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: `Hello world`,
-    description: `Minimal Next.js app with MUI v7`,
+    title: "Hello world",
+    description: "Minimal Next.js app with MUI v7",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
